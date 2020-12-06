@@ -1,0 +1,1 @@
+﻿Get-ChildItem -Path Q:\Gecici -File -Recurse | Where LastWriteTime -lt (Get-Date).AddHours(-3) | Remove-Item
